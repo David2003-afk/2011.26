@@ -95,7 +95,7 @@ if st.button("Analizar", type="primary"):
             )
     st.markdown("**Aspectos detectados**")
     if filas:
-        st.dataframe(pd.DataFrame(filas), hide_index=True, use_container_width=True)
+        st.dataframe(pd.DataFrame(filas), hide_index=True)
     else:
         st.caption("No se detectaron aspectos específicos en este texto.")
 
